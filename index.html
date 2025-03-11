@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExproTravel - Jelajahi Dunia dengan Cara yang Berbeda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <nav id="nav">
+        <div class="logo">
+            <h1>ExproTravel</h1> <img src="logo-removebg-preview.png" width="100px" height="100px">
+        </div>
+        <div class="menu">
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#popular">Destinasi Populer</a>          
+            <a href="#Paket">paket</a>
+            <a href="#testimoni">testimoni</a>
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <header id="home">
+        <div>
+            <h1>Liburan impian Anda, nyaman dan hemat bersama ExproTravel</h1>
+            <button class="cta-button" onclick="window.location.href='#popular'">PESAN SEKARANG</button>
+        </div>
+    </header>
+
+    <!-- Tentang Kami -->
+    
+    <!-- paket mulai -->
+    <section id="about">
+        <img src="foto-tentang-kami.png" alt="">
+        <div class="info">
+        <h1>Tentang Kami</h1>
+        <p>Kami adalah ExproTravel, sebuah tim yang berdedikasi untuk membantu Anda menjelajahi dunia dengan cara yang lebih mudah, nyaman, dan berkesan. Dengan pengalaman bertahun-tahun di industri travel, kami telah membantu ribuan pelancong menemukan destinasi impian mereka, mulai dari wisata alam yang memukau hingga pengalaman budaya yang mendalam. Kami percaya bahwa setiap perjalanan adalah kesempatan untuk menciptakan kenangan baru, dan itulah mengapa kami memastikan setiap detail direncanakan dengan sempurna.</p>
+    </div>
+    </section>
+   
+    <section id="Paket">
+        <div class="text">
+        <h2>Paket liburan</h2>
+    </div>
+    <div class="container-destinasi">
+       
+        <!-- <div class="destinasi"> -->
+            <button onclick="showyogyakarta()">
+                <div class="destination-item">
+                <img src="budget.jpeg" alt="Destinasi 6">
+                <div class="info">
+                    <h3>Budget</h3>
+                    <p class="price">Rp 25,000,000</p>
+                    <p>Termasuk harga pesawat ekonomi <i class="fa-solid fa-check"></i><br>
+                       Termasuk harga hotel bintang 3 <i class="fa-solid fa-check"></i><br>
+                       Termasuk harga 2 wisata bali  dan jawa <i class="fa-solid fa-check"></i></p>
+                      
+                </div>
+            </div>
+        </button>
+        </button>
+            <button onclick="showmagelang()">
+                <div class="destination-item">
+                    <img src="hotel-bintang-4.jpeg" alt="Destinasi 6">
+                    <div class="info">
+                        <h3>Standar</h3>
+                        <p class="price">Rp 27.500.000 </p>
+                        <p>termasuk harga pesawat Bisnis <i class="fa-solid fa-check"></i><br>
+                           Termasuk harga hotel bintang 4 <i class="fa-solid fa-check"></i><br>
+                           Termasuk harga 3 wisata bali <i class="fa-solid fa-check"></i><br>
+                           termasuk keliling ke sedikit candi bali dan jawa <i class="fa-solid fa-check"></i>
+                        </p>
+                    </div>
+                </div>
+            </button>
+            <button onclick="showbali()"> 
+                <div class="destination-item">
+                <img src="hotel-vip.jpeg" alt="Destinasi 6">
+                <div class="info">
+                    <h3>Premium</h3>
+                    <p class="price">Rp 30,500,000</p> 
+                    <p>Pulang pergi pesawat First Class <i class="fa-solid fa-check"></i><br>
+                        Termasuk harga hotel bintang 5 <i class="fa-solid fa-check"></i><br>
+                        Termasuk harga 6 wisata bali <i class="fa-solid fa-check"></i><br>
+                        termasuk keliling ke semua candi bali dan jawa  <i class="fa-solid fa-check"></i></p>
+                </div>
+            </div>
+        </button>
+    </div>
+
+    <div class="hero">
+        <!-- yogyakarta mulai -->
+        <div id="yogyakarta" class="leg hidden">               
+            <h2>Fasilitas yang Anda dapatkan</h2>
+        </div>
+        <div class="yogyakarta1">
+        <div class="kota1">
+           
+            <div id="yogyakarta1" class="leg1 hidden">
+                <div class="foto"></div>
+                <h3>Pesawat Kelas Ekonomi</h3>
+                <p>kalian akan di bawa dengan pesawat yang<br>cukup nyaman</p>
+            </div>
+            <div id="yogyakarta2" class="leg1 hidden">               
+                <div class="foto"></div> 
+               
+                <h3>pantai drini</h3>
+                <p>kami akan membawa kalian ke pantai yang <br>menakjubkan di hari pertama</p>
+            </div>
+            <div id="yogyakarta3" class="leg1 hidden">
+                <div class="foto"></div>
+                <h3>Gunung Merapi</h3>
+                <p>Kalian akan melihat gunung yang indah</p>
+            </div>
+        </div>
+        <div class="kota2">
+            <div id="yogyakarta4" class="leg2 hidden">
+                <div class="foto">
+                </div>
+                <h3>Tara Hotel Yogyakarta</h3>
+                <p>Disinilah kalian akan menginap</p>
+                <h3>Rating:<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></h3>
+            </div>
+            <div id="yogyakarta5" class="leg2 hidden">
+                <div class="foto"></div> 
+                <h3>Makanan tradisional</h3>
+                <p>Makanan yang tradisional yang ada di <br>Yogyakarta</p>
+            </div>
+            <div id="yogyakarta6" class="leg2 hidden">
+                <div class="foto"></div>
+                <h3>candi prambanan</h3>
+                <p>Disini juga kalian akan di bawa ke candi <br>Prambanan </p>
+            </div>
+        </div>
+    </div>
+    <!-- yogyakarta selesai -->
+     <!-- magelang mulai -->
+     <div id="yogyakarta1" class="leg hidden">               
+        <h2>Fasilitas yang Anda dapatkan</h2>
+    </div>
+      <div class="kota3">
+        <div id="magelang1" class="leg1 hidden">
+            <div class="foto"></div>
+            <h3>Pesawat kelas bisnis batik air</h3>
+            <p>Pesawat ini yang akan membawa kalian ke<br>berbegai tempat</p>
+        </div>
+        <div id="magelang2" class="leg1 hidden">
+            <div class="foto">
+            </div>
+            <h3>Candi mendut</h3>
+            <p>kami akan membawa kalian ke Candi Mendut</p>
+        </div>
+        <div id="magelang3" class="leg1 hidden">
+            <div class="foto"></div> 
+            <h3>hotel amata borobudur</h3>
+            <p> Disini kalian akan menginap</p>
+            <h3>Rating:<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></h3>
+        </div>
+    </div>
+    <div class="kota2">
+        <div id="magelang4" class="leg2 hidden">
+            <div class="foto"></div>
+            <h3>Borobudur</h3>
+            <p>setelah dari Candi Mendut kalian akan Candi <br>Borobudur</p>
+           
+        </div>
+        <div id="magelang5" class="leg2 hidden">
+            <div class="foto"></div>
+            <h3>Pura Ulun Danu Beratan </h3>
+            <p>Pura yang terkenal karena mengapung<br> di atas air</p>
+        </div>
+        <div id="magelang6" class="leg2 hidden">
+            <div class="foto">
+            </div>
+            <h3>Sangeh Monkey Forest</h3>
+            <p>kami akan mengajak kalian ke <br>Taman monyet di bali</p>
+        </div>
+    </div>
+    <!-- magelang selesai -->
+      <!-- bali mulai -->
+      <div id="yogyakarta" class="leg hidden">               
+        <h2>Fasilitas yang Anda dapatkan</h2>
+    </div>
+    <div class="kota1">
+      <div id="bali1" class="leg1 hidden">
+        <div class="foto"></div> 
+        <h3>Borobudur</h3>
+        <p>Candi yang terkenal di magelang</p>
+    </div>
+    <div id="bali2" class="leg1 hidden">
+        <div class="foto"></div>
+        <h3>Gunung-kidul</h3>
+        <p>Disana banyak sekali tempat tempat wisata</p>
+    </div>
+    <div id="bali3" class="leg1 hidden">
+        <div class="foto"></div>
+        <h3>UNIQUE Rooftop Bar<br> & Restaurant</h3>
+        <p>Tempat makan yang sudah kami sediakan</p>
+      
+    </div>
+</div>
+    </div>
+<div class="kota2">
+    <div id="bali4" class="leg2 hidden">
+        <div class="foto"></div>
+        <h3>The Apurva Kempinski Bali</h3>
+        <p>Disilah kalian menginap</p>
+        <h3>Rating:<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></h3>
+    </div>
+    <div id="bali5" class="leg2 hidden">
+        <div class="foto"></div>
+        <h3>Card 1</h3>
+        <p>Deskripsi</p>
+    </div>
+    <div id="bali6" class="leg2 hidden">
+        <div class="foto"></div>
+        <h3>Card 1</h3>
+        <p>Deskripsi</p>
+    </div>
+</div>
+</div>    
+</div>              
+    </section>
+    <!-- paket selesai -->
+
+  
+     <!-- destinasi popular -->
+    <section id="popular">
+        <div class="destination-gallery">
+            <h2>Destinasi popular</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="destination-item">
+                <img src="borobudur.jpg" alt="Destinasi 1">
+                <div class="info">
+                    <h3>borobudur</h3>
+                    <p class="price">Rp 3,000,000</p>
+                    <p>Pesona Masa Abad ke-8 dan ke-9 Masehi.</p>
+                </div>
+            </div></div>
+              <div class="swiper-slide">
+                <div class="destination-item">
+                <img src="candi-prambanan.jpeg" alt="Destinasi 2">
+                <div class="info">
+                    <h3>candi prambanan</h3>
+                    <p class="price">Rp 1,000,000</p>
+                    <p>Pesona Masa Abad ke-9 Masehi.</p>
+                </div>
+            </div></div>
+              <div class="swiper-slide"><div class="destination-item">
+                <img src="gunung-Merapi.jpeg" alt="Destinasi 3">
+                <div class="info">
+                    <h3>Gunung merapi</h3>
+                    <p class="price">Rp 1,000,000</p>
+                    <p>Pesona gunung Merapi yang memanjakan mata.</p>
+                </div>
+            </div></div>
+              <div class="swiper-slide"><div class="destination-item">
+                <img src="Bromo.jpeg" alt="Destinasi 4">
+                <div class="info">
+                    <h3>Bromo </h3>
+                    <p class="price">Rp 5,000,000</p>
+                    <p>pesona pegunungan.</p>
+                </div>
+            </div></div>
+              <div class="swiper-slide"><div class="destination-item">
+                <img src="pantai-parangkritis.jpeg" alt="Destinasi 5">
+                <div class="info">
+                    <h3>pantai parangkritis</h3>
+                    <p class="price">Rp 1,000,000</p>
+                    <p>melihat dan menikmati indahnya pantai.</p>
+                </div>
+            </div></div>
+              <div class="swiper-slide"><div class="destination-item">
+                <img src="gunung-gede.jpeg" alt="Destinasi 6">
+                <div class="info">
+                    <h3>Gunung Gede</h3>
+                    <p class="price">Rp 1,000,000</p>
+                    <p>Melihat sunset yang indah.</p>
+                </div>
+            </div></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </section>
+    <!-- destinasi selesai -->
+
+   
+ 
+   <!-- testimoni -->
+   <section id="testimoni">
+    <div class="judul-testimoni">
+   <h1>Testimoni Dari beberapa pelanggan kami </h1></div>
+    <div class="testimoni-container">
+        <div class="testimoni">
+            <img src="foto-testimoni1.jpg" alt="Foto Andi">
+            <div class="testimoni-content">
+                <p class="name">Andi, Jakarta</p>
+                <p>"Saya sangat puas dengan pelayanan yang diberikan! Prosesnya cepat, hasilnya memuaskan, dan timnya sangat responsif. Terima kasih banyak!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="testimoni">
+            <img src="foto-testimoni2.jpeg" alt="Foto Siti">
+            <div class="testimoni-content">
+                <p class="name">Siti, Surabaya</p>
+                <p>"Layanan ini benar-benar membantu saya. Awalnya saya ragu, tapi hasilnya melebihi ekspektasi. Sangat direkomendasikan untuk siapa saja yang membutuhkan!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="testimoni">
+            <img src="foto-testimoni3.jpg" alt="Foto Rahmat">
+            <div class="testimoni-content">
+                <p class="name">Rahmat, Bandung</p>
+                <p>"Profesional, cepat, dan ramah. Saya tidak menyangka semuanya bisa selesai dengan begitu mudah. Terima kasih atas bantuan yang luar biasa ini!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="testimoni">
+            <img src="foto-testimoni4.jpg" alt="Foto Dewi">
+            <div class="testimoni-content">
+                <p class="name">Dewi, Yogyakarta</p>
+                <p>"Ini pengalaman terbaik saya. Tidak hanya hasilnya bagus, tetapi juga pelayanannya sangat memuaskan. Saya pasti akan kembali lagi!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+    <!-- testimoni selesai -->
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Formulir Kontak -->
+            <div class="contact-form">
+                <h2>Hubungi Kami</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Nama Anda" required>
+                    <input type="email" name="email" placeholder="Email Anda" required>
+                    <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+    
+            <!-- Informasi Kontak -->
+            <div class="contact-info">
+                <h2>Informasi Kontak</h2>
+                <p><i class="fas fa-phone-alt"></i> Telepon: +62 877 7437 5755</p>
+                <p><i class="fas fa-envelope"></i> Email:fathanghani,itxpro@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Alamat: Bukit Cimanggu City </p>
+    
+                <!-- Tombol CTA -->
+                <div class="cta-buttons">
+                    <a href="tel:+62087774375755">Hubungi Kami</a>
+                    <a href="https://www.tiktok.com/@c.marvoleus" class="socials">Ikuti Kami di Media Sosial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Footer Flexbox</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <footer class="footer">
+        <!-- Kontainer Utama -->
+        <div class="footer-container">
+          
+          <!-- Kontak Kami -->
+          <div class="footer-section">
+            <h4>Kontak Kami</h4>
+            <p><strong>Alamat:</strong> Jl. Contoh No. 123, Kota Contoh</p>
+            <p><strong>Nomor Telepon:</strong> <a href="tel:+6200000000">+62 000 0000 0000</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@exprotravel.com">info@exprotravel.com</a></p>
+          </div>
+    
+          <!-- Navigasi -->
+          <div class="footer-section">
+            <h4>Navigasi</h4>
+            <ul class="footer-nav">
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#about">Tentang Kami</a></li>
+              <li><a href="#popular">Popular Destinasi</a></li>
+              <li><a href="#testimoni">Testimoni</a></li>
+              <li><a href="#paket">Paket Wisata</a></li>
+            </ul>
+          </div>
+          <!-- Ikon Sosial Media -->
+          <div class="footer-section">
+            <h4>Ikuti Kami</h4>
+            <div class="social-icons">
+              <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i> </a>
+              <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>Copyright © 2024 ExproTravel. All rights reserved.</p>
+        </div>
+      </footer>
+    </body>
+    </html>
+    
+      
+    <!-- Footer -->
+    <!-- <footer>
+        <p> Copyright &copy;   2024 ExproTravel. All rights reserved.</p>
+    </footer> -->
+      
+    <script src="https://kit.fontawesome.com/238d610e85.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
